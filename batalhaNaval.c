@@ -39,5 +39,16 @@ int main() {
     }
     printf("\n");
 
+// Exibe tabuleiro
 
+    printf("Tabuleiro (1 = parte de navio, 0 = vazio):\n");
+    for (int i = 0; i < TAM; i++) {
+        for (int j = 0; j < TAM; j++) {
+            printf("%d ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
     
