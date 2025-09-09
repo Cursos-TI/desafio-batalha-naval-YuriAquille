@@ -13,15 +13,15 @@ int main() {
     int navioVerticalY = 4; // linha inicial
     int tamanhoVertical = 3;
 
-    // Navio horizontal (4 posições)
+   // Navio horizontal (4 posições)
     int navioHorizontalX = 6; // linha (fixa)
     int navioHorizontalY = 1; // coluna inicial
     int tamanhoHorizontal = 4;
 
     printf("--- BATALHA NAVAL - NIVEL NOVATO ---") ;
 
-    //Posicinamento navio horizontal no tabuleiro e mostra as cordenadas
-    
+    //Posicinamento navio vertical no tabuleiro e mostra as cordenadas
+
  printf("Navio Vertical (tamanho %d):\n", tamanhoVertical);
     for (int i = 0; i < tamanhoVertical; i++) {
         tabuleiro[navioVerticalY + i][navioVerticalX] = 1;
@@ -29,6 +29,15 @@ int main() {
     }
     printf("\n");
 
-}
+
+ //Posicinamento navio horizontal no tabuleiro e mostra as cordenadas
+
+    printf("Navio Horizontal (tamanho %d):\n", tamanhoHorizontal);
+    for (int j = 0; j < tamanhoHorizontal; j++) {
+        tabuleiro[navioHorizontalX][navioHorizontalY + j] = 1;
+        printf("  Coordenada: (%d, %d)\n", navioHorizontalX, navioHorizontalY + j);
+    }
+    printf("\n");
+
 
     
